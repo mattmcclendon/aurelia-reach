@@ -1,17 +1,679 @@
 ---
-
+const title = 'Aurelia Reach';
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <section class="hero">
+      <img src="/images/ar-meridian-night.png" alt="Meridian at dusk" class="hero-image" />
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <h1>AURELIA REACH</h1>
+        <div class="divider"></div>
+        <p class="tagline">A frontier for civic thought.</p>
+        <p class="coming-soon" aria-hidden="true">&nbsp;</p>
+      </div>
+    </section>
+
+    <main>
+      <section class="intro">
+        <p>
+          Aurelia Reach is a Federation world located on the fourth planet of the Aurelia System in the Cassiopeia Sector. Founded in 2321, the planet is home to approximately 6.8 million residents. Meridian, the planetary capital and largest city, serves as the center of government, commerce, education, knowledge stewardship, and interstellar affairs.
+        </p>
+
+        <p>
+          Aurelia Reach is also a civic thought laboratory: a fictional setting
+          used to examine real questions about governance, infrastructure,
+          belonging, significance, memory, and life beyond scarcity.
+        </p>
+
+        <div class="mini-divider"></div>
+
+        <p class="statement">Not because the future can be predicted.</p>
+        <p class="statement emphasis">Because it can be imagined.</p>
+      </section>
+
+      <section class="meridian-section" aria-labelledby="latest-from-meridian">
+        <div class="section-kicker">Latest from Meridian</div>
+        <h2 id="latest-from-meridian">Thought Experiments</h2>
+        <p class="section-intro">
+          Dispatches from the civic imagination of Aurelia Reach. Each begins as
+          a fictional scenario, then opens into a real question about how people,
+          institutions, and communities organize themselves.
+        </p>
+
+        <div class="briefing-list">
+          <a class="briefing-card" href="https://amidthenoise.com/thinking/frontier-day-and-civic-trust">
+            <span class="briefing-label">Civic Trust</span>
+            <h3>Frontier Day and Civic Trust</h3>
+            <p>Trust is infrastructure. What follows when that infrastructure breaks?</p>
+          </a>
+
+          <a class="briefing-card" href="https://amidthenoise.com/thinking/the-problem-with-post-scarcity">
+            <span class="briefing-label">Post-Scarcity</span>
+            <h3>The Problem With Post-Scarcity</h3>
+            <p>When survival is solved, significance becomes the question.</p>
+          </a>
+
+          <a class="briefing-card" href="https://amidthenoise.com/thinking/beyond-achievement">
+            <span class="briefing-label">Significance</span>
+            <h3>Beyond Achievement</h3>
+            <p>Achievement answers many questions. Meaning is rarely one of them.</p>
+          </a>
+
+          <a class="briefing-card" href="https://amidthenoise.com/thinking/the-mayfield-principle">
+            <span class="briefing-label">Civic Memory</span>
+            <h3>The Mayfield Principle</h3>
+            <p>Places accumulate stories long after their origins are forgotten.</p>
+          </a>
+
+          <a class="briefing-card" href="https://amidthenoise.com/thinking/the-hidden-architecture-of-civilization">
+            <span class="briefing-label">Civilization</span>
+            <h3>The Hidden Architecture of Civilization</h3>
+            <p>Civilization leaves clues. Systems leave more.</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="closing-note">
+        <p>
+          These thought experiments are not predictions. They are tools for
+          testing assumptions, tracing consequences, and exploring civic questions
+          before reality forces an answer.
+        </p>
+        <p>
+          If one of these questions opens another, challenges an assumption, or
+          suggests a better frame for thinking about the future, responses are
+          welcome at
+          <a href="mailto:info@aureliareach.org?subject=Thought%20Experiment%20Feedback">info@aureliareach.org</a>.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-identity">
+          <img src="/images/ufp.png" alt="United Federation of Planets emblem" class="footer-emblem" />
+          <p class="footer-agency">United Federation of Planets</p>
+          <p class="footer-department">Department of Planetary Affairs</p>
+        </div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="#about-the-project">About the Project</a>
+          <a href="#disclaimer">Disclaimer</a>
+          <a href="mailto:info@aureliareach.org">Contact</a>
+        </nav>
+
+        <p class="footer-copyright">© 2026 Matthew McClendon. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <aside id="about-the-project" class="overlay-panel" aria-labelledby="about-title">
+      <a href="#" class="overlay-backdrop" aria-label="Close about the project"></a>
+      <div class="overlay-card" role="dialog" aria-modal="true">
+        <a href="#" class="overlay-close" aria-label="Close about the project">Close</a>
+        <h2 id="about-title">About the Project</h2>
+        <p>
+          Aurelia Reach is a civic thought laboratory set on a fictional Federation world.
+          It uses narrative distance to explore real questions about governance,
+          infrastructure, belonging, memory, significance, and life beyond scarcity.
+        </p>
+        <p>
+          The project connects the speculative worldbuilding of
+          <a href="https://usskepler.org">USS Kepler</a> with the essays and
+          thought experiments published through
+          <a href="https://amidthenoise.com">Amid the Noise</a>. Aurelia Reach
+          is not an escape from present-day systems. It is a place to examine
+          them from enough distance to see their assumptions more clearly.
+        </p>
+        <p>
+          Responses, questions, and better frames are welcome at
+          <a href="mailto:info@aureliareach.org?subject=Aurelia%20Reach%20Project">info@aureliareach.org</a>.
+        </p>
+      </div>
+    </aside>
+    <aside id="disclaimer" class="overlay-panel" aria-labelledby="disclaimer-title">
+      <a href="#" class="overlay-backdrop" aria-label="Close disclaimer"></a>
+      <div class="overlay-card" role="dialog" aria-modal="true">
+        <a href="#" class="overlay-close" aria-label="Close disclaimer">Close</a>
+        <h2 id="disclaimer-title">Disclaimer</h2>
+        <p>
+          Aurelia Reach is an independent, non-commercial civic thought experiment
+          and fictional worldbuilding project created by Matthew McClendon.
+        </p>
+        <p>
+          This project is inspired by the civic and exploratory traditions of
+          science fiction. Star Trek and all related names, marks, concepts, and
+          intellectual property belong to Paramount Global and their respective
+          rights holders. No affiliation, endorsement, or infringement is intended.
+        </p>
+        <p>
+          References to the United Federation of Planets, planetary affairs,
+          Federation worlds, and related fictional institutions are used as part
+          of the project's speculative framework.
+        </p>
+      </div>
+    </aside>
+  </body>
 </html>
+
+<style>
+  .overlay-panel {
+    position: fixed;
+    inset: 0;
+    z-index: 20;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .overlay-panel:target {
+    display: flex;
+  }
+
+  .overlay-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(8, 17, 29, 0.74);
+    backdrop-filter: blur(2px);
+  }
+
+  .overlay-card {
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    width: min(680px, 100%);
+    max-height: min(78vh, 720px);
+    overflow: auto;
+    background: var(--paper);
+    border-top: 4px solid var(--gold);
+    box-shadow: 0 30px 90px rgba(0, 0, 0, 0.42);
+    padding: 2.5rem 2.75rem 2.75rem;
+    color: var(--text);
+  }
+
+
+  .overlay-card h2 {
+    margin: 0 0 1.25rem;
+    color: var(--text);
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(2.1rem, 5vw, 3.25rem);
+    font-weight: 500;
+    line-height: 1;
+  }
+
+  .overlay-card p {
+    margin: 0;
+    font-size: 0.98rem;
+    line-height: 1.8;
+    text-wrap: pretty;
+  }
+
+  .overlay-card p + p {
+    margin-top: 1.15rem;
+  }
+
+  .overlay-card a:not(.overlay-close) {
+    color: var(--text);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.16em;
+  }
+
+  .overlay-card a:not(.overlay-close):hover {
+    color: var(--gold);
+    text-decoration-thickness: 2px;
+  }
+
+  .overlay-close {
+    position: absolute;
+    top: 1.1rem;
+    right: 1.25rem;
+    color: var(--text);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-underline-offset: 0.16em;
+  }
+
+  .overlay-close:hover {
+    color: var(--gold);
+  }
+  :root {
+    --paper: #f8f7f4;
+    --gold: #b48a4a;
+    --text: #243447;
+    --night: #08111d;
+  }
+
+  html,
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--text);
+  }
+
+  body {
+    font-family: 'Libre Baskerville', serif;
+  }
+
+  .hero {
+    position: relative;
+    height: 92vh;
+    min-height: 760px;
+    overflow: hidden;
+    background: #08111d;
+  }
+
+  .hero-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at 18% 12%, rgba(8, 17, 29, 0.16), transparent 24rem),
+      linear-gradient(
+        to bottom,
+        rgba(8, 17, 29, 0.02) 0%,
+        rgba(8, 17, 29, 0.1) 42%,
+        rgba(8, 17, 29, 0.5) 100%
+      );
+  }
+
+  .hero-content {
+    position: absolute;
+    left: 50%;
+    bottom: 12%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #f8f7f4;
+    width: min(92%, 1120px);
+    isolation: isolate;
+  }
+
+  .hero-content::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 46%;
+    z-index: -1;
+    width: min(920px, 86vw);
+    height: 260px;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(ellipse at center, rgba(8, 17, 29, 0.42), transparent 70%);
+    pointer-events: none;
+  }
+
+  h1 {
+    margin: 0;
+    color: #c8a96b;
+    text-transform: uppercase;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(3.5rem, 7vw, 6.5rem);
+    font-weight: 500;
+    letter-spacing: .10em;
+    line-height: .95;
+    text-shadow:
+      0 1px 0 rgba(255, 244, 220, 0.3),
+      0 3px 2px rgba(73, 46, 16, 0.65),
+      0 12px 28px rgba(0, 0, 0, 0.72),
+      0 28px 68px rgba(0, 0, 0, 0.86),
+      0 0 42px rgba(0, 0, 0, 0.46);
+    white-space: nowrap;
+  }
+
+  .tagline {
+    margin: 1.5rem 0 0;
+    color: #f8f7f4;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: clamp(1.8rem, 3vw, 2.8rem);
+    line-height: 1.1;
+    text-shadow: 0 10px 30px rgba(0, 0, 0, .45);
+  }
+
+  .divider {
+    position: relative;
+    width: min(420px, 44vw);
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--gold), transparent);
+    margin: 1.75rem auto 0;
+  }
+
+  .divider::after {
+    content: '✦';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--gold);
+    font-size: 1rem;
+    background: transparent;
+  }
+
+  .coming-soon {
+    margin: 2.75rem 0 0;
+    color: var(--gold);
+    font-size: .9rem;
+    letter-spacing: .42em;
+  }
+
+  .intro {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    color: #243447;
+    padding: 5.75rem 2rem 5.5rem;
+    line-height: 1.9;
+    font-size: 1.12rem;
+  }
+
+  .intro p {
+    color: #243447;
+    text-wrap: pretty;
+  }
+
+  .mini-divider {
+    width: 80px;
+    height: 1px;
+    background: #d7c6a3;
+    margin: 3rem auto;
+  }
+
+  .statement {
+    margin: 0;
+  }
+
+  .emphasis {
+    font-style: italic;
+    margin-top: .5rem;
+  }
+
+  main .meridian-section {
+    box-sizing: border-box;
+    width: min(980px, calc(100% - 4rem));
+    margin: 0 auto;
+    padding: 0 0 5.75rem;
+    color: var(--text);
+  }
+
+  main .section-kicker {
+    color: var(--gold);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    line-height: 1.4;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  main .meridian-section h2 {
+    margin: 0.75rem 0 0;
+    color: var(--text);
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(2.15rem, 4vw, 3.25rem);
+    font-weight: 500;
+    line-height: 1.05;
+    text-align: center;
+  }
+
+  main .section-intro {
+    max-width: 720px;
+    margin: 1.25rem auto 3rem;
+    color: var(--text);
+    font-size: 1rem;
+    line-height: 1.85;
+    text-align: center;
+    text-wrap: pretty;
+  }
+
+  main .briefing-list {
+    display: grid;
+    gap: 1.15rem;
+  }
+
+  main .briefing-card {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    padding: 1.55rem 1.75rem 1.5rem 2rem;
+    color: var(--text);
+    background: rgba(255, 255, 255, 0.38);
+    border: 1px solid rgba(36, 52, 71, 0.12);
+    text-decoration: none;
+    transition:
+      border-color 0.2s ease,
+      transform 0.2s ease,
+      background 0.2s ease;
+  }
+
+  main .briefing-card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 1.55rem;
+    width: 3px;
+    height: 3.35rem;
+    background: var(--gold);
+  }
+
+  main .briefing-card:hover {
+    background: rgba(255, 255, 255, 0.56);
+    border-color: rgba(180, 138, 74, 0.45);
+    transform: translateY(-1px);
+  }
+
+  main .briefing-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--gold);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    line-height: 1.35;
+    text-transform: uppercase;
+  }
+
+  main .briefing-card h3 {
+    margin: 0 0 0.35rem;
+    color: var(--text);
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(1.55rem, 3vw, 2.1rem);
+    font-weight: 500;
+    line-height: 1.15;
+  }
+
+  main .briefing-card p {
+    margin: 0;
+    color: rgba(36, 52, 71, 0.78);
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+
+  main .closing-note {
+    width: min(760px, calc(100% - 4rem));
+    margin: 0 auto;
+    padding: 0 0 6rem;
+    color: var(--text);
+    font-size: 1rem;
+    line-height: 1.85;
+    text-align: center;
+    text-wrap: pretty;
+  }
+
+  main .closing-note p {
+    margin: 0;
+  }
+
+  main .closing-note p + p {
+    margin-top: 1.25rem;
+  }
+
+  main .closing-note a {
+    color: var(--text);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.16em;
+  }
+
+  main .closing-note a:hover {
+    color: var(--gold);
+    text-decoration-thickness: 2px;
+  }
+
+  .site-footer {
+    position: relative;
+    overflow: hidden;
+    min-height: 0;
+    background:
+      radial-gradient(circle at 50% 0%, rgba(180, 138, 74, 0.08), transparent 28rem),
+      #08111d;
+    color: var(--paper);
+    text-align: center;
+    padding: 1.4rem 2rem 1.25rem;
+    border-top: 3px solid var(--gold);
+  }
+
+  .site-footer > * {
+    position: relative;
+  }
+
+  .footer-inner {
+    position: relative;
+    max-width: 880px;
+    margin: 0 auto;
+    z-index: 1;
+  }
+
+  .footer-identity {
+    text-align: center;
+  }
+
+  .footer-emblem {
+    display: block;
+    width: 58px;
+    /*height: auto;*/
+    margin: 0 auto 0.45rem;
+  }
+
+  .footer-agency {
+    margin: 0;
+    color: var(--gold);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem;
+    /*font-style: italic;*/
+    line-height: 1.15;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+	font-weight: 600;
+  }
+
+  .footer-department {
+    margin: 0.3rem 0 2.15rem;
+    color: rgba(248, 247, 244, 0.72);
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 1.25;
+    text-align: center;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem 1.5rem;
+    margin: 0;
+    text-align: center;
+  }
+
+  .footer-links a {
+    color: var(--gold) !important;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.2s ease;
+  }
+
+  .footer-copyright {
+    margin: 0.85rem 0 0;
+    color: rgba(248, 247, 244, 0.42);
+    font-size: 0.68rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .site-footer a:hover {
+    color: #d7c6a3;
+  }
+
+  @media (max-width: 760px) {
+    .hero {
+      height: 82vh;
+      min-height: 560px;
+    }
+
+    h1 {
+      font-size: clamp(3rem, 15vw, 4.75rem);
+      letter-spacing: .08em;
+      white-space: nowrap;
+    }
+
+    .tagline {
+      font-size: 1.55rem;
+    }
+
+    .coming-soon {
+      font-size: .75rem;
+      letter-spacing: .32em;
+    }
+
+    main .meridian-section {
+      width: calc(100% - 2.5rem);
+    }
+
+    main .briefing-card {
+      padding: 1.35rem 1.25rem 1.35rem 1.5rem;
+    }
+
+    main .closing-note {
+      width: calc(100% - 2.5rem);
+    }
+
+   .overlay-panel {
+      padding: 1.25rem;
+      align-items: flex-end;
+    }
+
+    .overlay-card {
+      max-height: 82vh;
+      padding: 2.35rem 1.5rem 1.75rem;
+    }
+  }
+</style>
