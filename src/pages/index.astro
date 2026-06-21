@@ -106,6 +106,19 @@ const title = 'Aurelia Reach';
           <a href="mailto:info@aureliareach.org?subject=Thought%20Experiment%20Feedback">info@aureliareach.org</a>.
         </p>
       </section>
+
+      <section class="artifact-section" aria-label="Federation identity credential issued on Aurelia Reach">
+        <img
+          src="/images/ar-federation-passport.png"
+          alt="Federation identity credential issued on Aurelia Reach"
+          class="artifact-image"
+          loading="lazy"
+        />
+        <div class="artifact-caption-wrap">
+          <div class="artifact-caption-line"></div>
+          <p class="artifact-caption">Early 25th-century Federation passport</p>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">
@@ -534,6 +547,45 @@ const title = 'Aurelia Reach';
     line-height: 1.65;
   }
 
+  main .artifact-section {
+    box-sizing: border-box;
+    width: min(980px, calc(100% - 4rem));
+    margin: 0 auto;
+    padding: 0 0 4.25rem;
+    color: var(--text);
+    text-align: center;
+  }
+
+
+  main .artifact-image {
+    display: block;
+    width: min(100%, 760px);
+    max-height: 460px;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+
+  main .artifact-caption-wrap {
+    max-width: 320px;
+    margin: 0.75rem auto 0;
+  }
+
+  main .artifact-caption-line {
+    width: 120px;
+    height: 1px;
+    margin: 0 auto 0.85rem;
+    background: rgba(36, 52, 71, 0.16);
+  }
+
+  main .artifact-caption {
+    margin: 0;
+    color: rgba(36, 52, 71, 0.55);
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+
   main .closing-note {
     width: min(760px, calc(100% - 4rem));
     margin: 0 auto;
@@ -681,6 +733,16 @@ const title = 'Aurelia Reach';
 
     main .briefing-card {
       padding: 1.35rem 1.25rem 1.35rem 1.5rem;
+    }
+
+    main .artifact-section {
+      width: calc(100% - 2.5rem);
+      padding-bottom: 3.5rem;
+    }
+
+    main .artifact-image {
+      width: min(100%, 520px);
+      max-height: 420px;
     }
 
     main .closing-note {
