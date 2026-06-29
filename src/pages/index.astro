@@ -16,6 +16,7 @@ const title = 'Aurelia Reach';
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="preload" as="image" href="/images/ar-meridian-dawn.png" />
+    <link rel="preload" as="image" href="/images/ar-meridian-stormy.png" />
     <link rel="preload" as="image" href="/images/ar-meridian-sunset.png" />
     <link rel="preload" as="image" href="/images/ar-meridian-night.png" />
   </head>
@@ -138,20 +139,19 @@ const title = 'Aurelia Reach';
       </div>
     </footer>
 
-    <script>
-      const hour = new Date().getHours();
-      const hero = document.getElementById('hero-image');
-
-      let image = '/images/ar-meridian-dawn.png';
-
-      if (hour >= 15 && hour < 20) {
-        image = '/images/ar-meridian-sunset.png';
-      } else if (hour >= 20 || hour < 6) {
-        image = '/images/ar-meridian-night.png';
-      }
-
-      hero?.setAttribute('src', image);
-    </script>
+  <script>
+    const hour = new Date().getHours();
+    const hero = document.getElementById('hero-image');
+    let image = '/images/ar-meridian-dawn.png';
+    if (hour >= 12 && hour < 15) {
+      image = '/images/ar-meridian-stormy.png';
+    } else if (hour >= 15 && hour < 20) {
+      image = '/images/ar-meridian-sunset.png';
+    } else if (hour >= 20 || hour < 6) {
+      image = '/images/ar-meridian-night.png';
+    }
+    hero?.setAttribute('src', image);
+  </script>
 
     <aside id="about-the-project" class="overlay-panel" aria-labelledby="about-title">
       <a href="#" class="overlay-backdrop" aria-label="Close about the project"></a>
